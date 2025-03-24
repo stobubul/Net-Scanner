@@ -32,9 +32,7 @@ def get_arguments():
 
     if inputs.ip is None:
         print("[-] IP address is required, use --help for more info.    ")
-        return inputs
-    else:
-        return inputs
+    return inputs
 
 def arp_request(ip_address):
      return scapy.ARP(pdst=ip_address)
